@@ -1,0 +1,89 @@
+.color-overlay {
+    /* position: absolute;
+    background-color: rgba(0, 0, 0,0.2);
+    height:100%;
+    width:auto;
+    mix-blend-mode:normal; */
+    /* padding-left: 10rem;  */
+    float:left;
+    /* width:50% */
+}
+/* form {
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+} */
+/* .mb-3 {
+    width: 400px;
+} */
+.contact {
+    border-radius: 1;
+    /* width: 2rem;
+    height: 3rem; */
+}
+.icons {
+    /* height:5rem;
+    width:10rem; */
+    
+    border-radius: 50%;
+  
+   padding-left: 5px;
+   
+}
+/* .contact a {
+
+    font-size: 30px;
+    width:50px;
+    height: max-content;
+display: flex;
+
+border-radius: 100%;
+
+} */
+#dark .contact svg{
+    color:white;
+}
+#dark .contact{
+    color:white;
+}
+.phone {
+    color: blue;
+    /* background: round; */
+    
+}
+.contact a:hover {
+    background: yellow;
+     
+    /* width:5rem;
+    height: 5rem; */
+}
+.mail {
+    Color:red;
+}
+.location {
+    color: orange;
+}
+#ph {
+    display: inline-flex;
+}
+#foot {
+   text-align: center;
+
+}
+ .footer {
+   width: 10rem;
+   height: 3rem;
+   justify-content: space-between;
+}
+#foot{
+    margin-top: 5rem;
+}
+.main{
+    color: white;
+}
+#dark .text svg{
+    color: white;
+}
+
+.arr svg{
+    height: 40px;
+}

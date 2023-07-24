@@ -1,24 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from '../src/components/Header';
+import Home from '../src/components/Home';
+import MyIntro from './components/MyIntro';
+import Services from './components/Services';
+import Portfolio from './components/Portfolio';
+import Testimonial from './components/Testimonial';
+import Blog from './components/Blog';
+import { createContext, useState } from 'react';
+import ReactSwitch from 'react-switch';
+import {WiSolarEclipse} from "react-icons/wi";
+import {WiMoonWaxingCrescent4} from 'react-icons/wi';
+export const ThemeContext = createContext(null);
 
 function App() {
+  const [theme,setTheme] = useState("dark");
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" :"light"))
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+    <ThemeContext.Provider value={{theme,toggleTheme}}>
+       <div className='App' id={theme}>
+      <Header />
+      <div className='switch'><h6> <WiSolarEclipse className='sun'/> <WiMoonWaxingCrescent4 className='moon'/> <ReactSwitch  onChange={toggleTheme}   checked={theme === "dark"}/></h6>
+ 
+      </div>
+      <Home/>
+     
+      <MyIntro/>
+      <Services/>
+      <Portfolio/>
+      <Testimonial/>
+      <Blog/>
+      </div>
+      </ThemeContext.Provider>
+    
   );
 }
 
