@@ -1,0 +1,65 @@
+.main {
+ 
+  padding-left: 5rem;
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+.switch{
+ text-align: center;
+ float:right; 
+margin: 1rem;
+}
+
+  /* .cir1{
+    --clr:#04fc43;--num:85;
+  }
+  .cir2{
+    --clr:pink;--num:70;
+  }
+  .cir3{
+    --clr:orange;--num:55;
+  }
+  .cir4{
+    --clr:yellow;--num:60;
+  }
+  .cir5{
+    --clr:purple;--num:30;
+  } */
+ 
+/* :root{--textAlign:center;
+   --container-width-lg:75%;
+   --container-width-md:86%;--container-width-sm:90%;}
+
+   @media screen and (max-width:1024px) 
+   { .container{width:var(--container-width-md);}}
+   @media screen and (max-width:600px)
+    {.container{width:var(--container-width-sm);}} */
+
+#light{
+  background-color: white;
+}
+#dark{
+  background-color: black;
+}
+#light .sun{
+  color: yellow;
+ /* width: 2rem; */
+ margin-bottom: 1rem;
+}
+#light .moon{
+  display: none;
+}
+#dark .moon{
+  color: white;
+  /* width: 2rem; */
+ margin-bottom: 1rem;
+}
+#dark .react-switch-bg svg{
+display: none;
+}

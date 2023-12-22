@@ -1,0 +1,14 @@
+.Button {
+    font-size: 2.2rem;
+    background-color:gray;
+    padding: .7em 2em ;
+    border-radius: 8px;
+    display: inline-block;
+    border: 2px solid gray;
+    color:red;
+}
+@media only screen and (max-width:768px){
+    .Button {
+        font-size: 1.8rem;
+    }
+}

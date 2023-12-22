@@ -1,0 +1,74 @@
+#Testimonial{
+    padding: 10rem 0;
+    text-align: center;
+    color: white;
+}
+.testimonial_wrapper{
+    position: relative;
+    max-width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    
+}
+.testimonial_info{
+    width:100%;
+    height:fit-content;
+    padding:3rem;
+    background-color:grey;
+    border-radius: 20px;
+    margin-top: 5rem;
+}
+.testimonial_desc{
+    text-align: center;
+}
+.testimonial_name{
+    margin-top: 4rem;
+    
+}
+.testimonial_title{
+    font-size: 1.rem;
+    margin-top: 0.3rem;
+}
+.arrows{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prev,.next{
+    margin: 0 0.5rem;
+    width:fit-content;
+   
+    padding: .5rem 2rem;
+    border-radius: 8px;
+    cursor:pointer;
+    
+}
+#dark .prev,.next{
+    color: black;
+    background-color: white;
+}
+#light .prev,.next{
+    color: black;
+    background-color: white;
+}
+.fade-enter{
+    opacity: 0;
+    transform: scale(.96);
+}
+.fade-enter-active{
+    opacity: 1;
+    transform: scale(1);
+    transition:250ms ease-in;
+    transition-property: opacity,transform;
+}
+.fade-exit{
+    opacity: 1;
+    transform: scale(1);
+}
+.fade-exit-active{
+    opacity: 0;
+    transform: scale(.96);
+    transition:250ms ease-in opacity;
+    transition-property: opacity,transform;
+}
